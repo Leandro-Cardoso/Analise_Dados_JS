@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body, section{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+body{
+    font: 15pt normal Arial;
+}
+p{
+    margin: 0px;
+}
+section{
+    width: 100%;
+    text-align: center;
+}
