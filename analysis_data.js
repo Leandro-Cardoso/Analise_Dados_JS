@@ -55,15 +55,7 @@ class Arrays_correlation{
     constructor(data_x, data_y){
         this.data_x = data_x
         this.data_y = data_y
-        this.n = this.smaller_n(data_x.length, data_y.length)
-    }
-    smaller_n(n_x, n_y){
-        if(n_x < n_y){
-            return n_x
-        }
-        else{
-            return n_y
-        }
+        this.n = data_x.length < data_y.length ? data_x.length : data_y.length
     }
     covariance_p(){
         var deviation_xy = 0
@@ -84,6 +76,6 @@ class Arrays_correlation{
     }
 }
 //------------------------------------------------TEST RESULTS
-var data_x = new Array([10, 20, 30, 40, 50])
+var data_x = new Array([50, 20, 30, 40, 50])
 var data_y = new Array([50, 40, 30, 20, 10])
-var data_xy = new Arrays_correlation([10, 20, 30, 40, 50], [50, 40, 30, 20, 10])
+var data_xy = new Arrays_correlation(data_x.data, data_y.data)

@@ -34,3 +34,10 @@ table tr td.class_1{
 table tr td.class_2{
     background-color: rgb(206, 206, 206);
 }
+/*------------------------------------------------DIAGRAM*/
+section#diagram{
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+    background-color: rgb(206, 206, 206);
+}
