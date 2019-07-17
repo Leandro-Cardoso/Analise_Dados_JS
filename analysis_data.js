@@ -55,3 +55,4 @@ class Arrays{
 //------------------------------------------------TEST RESULTS
 var data_x = new Arrays([10, 20, 30, 40, 50])
 var data_y = new Arrays([50, 40, 30, 20, 10])
+var data_xy = 0 //CRIATE CORRELATION <----------

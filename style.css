@@ -7,9 +7,6 @@ body, section, table, td{
 body{
     font: 15pt normal Arial;
 }
-p{
-    margin: 0px;
-}
 section{
     width: 100%;
     text-align: center;
@@ -21,16 +18,18 @@ table{
 }
 table caption{
     font-weight: bold;
-    text-transform: uppercase;
 }
 table tr td{
-    width: 300px;
+    width: 240px;
     height: 25pt;
     line-height: 25pt;
+    text-align: left;
+    padding: 0px 15px;
 }
 table tr td.class_1{
-    background-color: bisque;
+    background-color: rgb(71, 71, 71);
+    color: rgb(255, 255, 255);
 }
 table tr td.class_2{
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(206, 206, 206);
 }
