@@ -18,6 +18,7 @@ table{
 }
 table caption{
     font-weight: bold;
+    font-size: 25pt;
 }
 table tr td{
     width: 240px;

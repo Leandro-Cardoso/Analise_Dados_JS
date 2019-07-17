@@ -22,4 +22,4 @@ function table_generator(position_id, tab_title, tab_id, tab_lines, tab_coluns){
 //------------------------------------------------DRAW TABLE
 table_generator('analysis_data', 'Dados X', 'data_x', 10, 2)
 table_generator('analysis_data', 'Dados Y', 'data_y', 10, 2)
-table_generator('analysis_data', 'Correlação X e Y', 'data_xy', 10, 2)
+table_generator('analysis_data', 'Correlação X e Y', 'data_xy', 6, 2)

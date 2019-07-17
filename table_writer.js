@@ -22,8 +22,21 @@ function table_writer(tab_id, data){
     document.getElementById(tab_id + '_line_10_colun_2').innerHTML = data.average_deviation()
 }
 //------------------------------------------------TABLE COVARIANCE WRITER
-
-//------------------------------------------------WRITE TABLE
+function table_writer_correlation(tab_id, correlation_data){
+    document.getElementById(tab_id + '_line_1_colun_1').innerHTML = 'Dados X:'
+    document.getElementById(tab_id + '_line_1_colun_2').innerHTML = correlation_data.data_x
+    document.getElementById(tab_id + '_line_2_colun_1').innerHTML = 'Dados Y:'
+    document.getElementById(tab_id + '_line_2_colun_2').innerHTML = correlation_data.data_y
+    document.getElementById(tab_id + '_line_3_colun_1').innerHTML = 'N Considerado:'
+    document.getElementById(tab_id + '_line_3_colun_2').innerHTML = correlation_data.n
+    document.getElementById(tab_id + '_line_4_colun_1').innerHTML = 'Covariância Populacional:'
+    document.getElementById(tab_id + '_line_4_colun_2').innerHTML = correlation_data.covariance_p()
+    document.getElementById(tab_id + '_line_5_colun_1').innerHTML = 'Covariância Amostral:'
+    document.getElementById(tab_id + '_line_5_colun_2').innerHTML = correlation_data.covariance_a()
+    document.getElementById(tab_id + '_line_6_colun_1').innerHTML = 'Coeficiente de Correlação:'
+    document.getElementById(tab_id + '_line_6_colun_2').innerHTML = correlation_data.coefficient_correlation()
+}
+//------------------------------------------------WRITE TABLES
 table_writer('data_x', data_x)
 table_writer('data_y', data_y)
-//CRIATE TABLE CORRELATION WRITER <----------
+table_writer_correlation('data_xy', data_xy)
