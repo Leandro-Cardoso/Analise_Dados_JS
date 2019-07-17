@@ -50,32 +50,8 @@ class Arrays{
         return this.standard_deviation_a() / this.n ** (1 / 2)
     }
 }
-//------------------------------------------------TEST
+//------------------------------------------------ARRAYS CORRELATION
+
+//------------------------------------------------TEST RESULTS
 var data_x = new Arrays([10, 20, 30, 40, 50])
 var data_y = new Arrays([50, 40, 30, 20, 10])
-document.getElementById('analysis_data').innerHTML = `
-<h1>DADOS X:</h1>
-<p>Dados = ${data_x.data}</p>
-<p>N = ${data_x.n}</p>
-<p>Somatório = ${data_x.sum()}</p>
-<p>Média = ${data_x.mean()}</p>
-<br/>
-<p>Amplitude = ${data_x.amplitude()}</p>
-<p>Variância Populacional = ${data_x.variance_p()}</p>
-<p>Variância Amostral = ${data_x.variance_a()}</p>
-<p>Desvio Padrão Populacional = ${data_x.standard_deviation_p()}</p>
-<p>Desvio Padrão Amostral = ${data_x.standard_deviation_a()}</p>
-<p>Desvio da Média / Erro Padrão = ${data_x.average_deviation()}</p>
-
-<h1>DADOS Y:</h1>
-<p>Dados = ${data_y.data}</p>
-<p>N = ${data_y.n}</p>
-<p>Somatório = ${data_y.sum()}</p>
-<p>Média = ${data_x.mean()}</p>
-<br/>
-<p>Amplitude = ${data_y.amplitude()}</p>
-<p>Variância Populacional = ${data_y.variance_p()}</p>
-<p>Variância Amostral = ${data_y.variance_a()}</p>
-<p>Desvio Padrão Populacional = ${data_y.standard_deviation_p()}</p>
-<p>Desvio Padrão Amostral = ${data_y.standard_deviation_a()}</p>
-<p>Desvio da Média / Erro Padrão = ${data_y.average_deviation()}</p>`
