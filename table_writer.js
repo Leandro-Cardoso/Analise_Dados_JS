@@ -36,7 +36,27 @@ function table_writer_correlation(tab_id, correlation_data){
     document.getElementById(tab_id + '_line_6_colun_1').innerHTML = 'Coeficiente de Correlação:'
     document.getElementById(tab_id + '_line_6_colun_2').innerHTML = correlation_data.coefficient_correlation()
 }
+//------------------------------------------------TABLE LINEAR REGRESSION WRITER
+function table_writer_linear_regression(tab_id, linear_regression_data){
+    document.getElementById(tab_id + '_line_1_colun_1').innerHTML = 'Dados X:'
+    document.getElementById(tab_id + '_line_1_colun_2').innerHTML = linear_regression_data.data_x
+    document.getElementById(tab_id + '_line_2_colun_1').innerHTML = 'Dados Y:'
+    document.getElementById(tab_id + '_line_2_colun_2').innerHTML = linear_regression_data.data_y
+    document.getElementById(tab_id + '_line_3_colun_1').innerHTML = 'A:'
+    document.getElementById(tab_id + '_line_3_colun_2').innerHTML = linear_regression_data.a()
+    document.getElementById(tab_id + '_line_4_colun_1').innerHTML = 'B:'
+    document.getElementById(tab_id + '_line_4_colun_2').innerHTML = linear_regression_data.b()
+    document.getElementById(tab_id + '_line_5_colun_1').innerHTML = 'Erro de Y:'
+    document.getElementById(tab_id + '_line_5_colun_2').innerHTML = linear_regression_data.y_error()
+    document.getElementById(tab_id + '_line_6_colun_1').innerHTML = 'Erro de A:'
+    document.getElementById(tab_id + '_line_6_colun_2').innerHTML = linear_regression_data.a_error()
+    document.getElementById(tab_id + '_line_7_colun_1').innerHTML = 'Erro de B:'
+    document.getElementById(tab_id + '_line_7_colun_2').innerHTML = linear_regression_data.b_error()
+    document.getElementById(tab_id + '_line_8_colun_1').innerHTML = 'Função de Y:'
+    document.getElementById(tab_id + '_line_8_colun_2').innerHTML = linear_regression_data.y_function()
+}
 //------------------------------------------------WRITE TABLES
 table_writer('data_x', data_x)
 table_writer('data_y', data_y)
 table_writer_correlation('data_xy', data_xy)
+table_writer_linear_regression('liner_xy', linear_xy)

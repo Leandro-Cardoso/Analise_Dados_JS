@@ -23,3 +23,4 @@ function table_generator(position_id, tab_title, tab_id, tab_lines, tab_coluns){
 table_generator('analysis_data', 'Dados X', 'data_x', 10, 2)
 table_generator('analysis_data', 'Dados Y', 'data_y', 10, 2)
 table_generator('analysis_data', 'Correlação X e Y', 'data_xy', 6, 2)
+table_generator('analysis_data', 'Ajuste Linear X e Y', 'liner_xy', 8, 2)
