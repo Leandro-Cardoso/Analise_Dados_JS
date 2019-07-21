@@ -117,7 +117,7 @@ class Arrays_linear_regression{
     }
 }
 //------------------------------------------------TEST RESULTS
-var data_x = new Array([10, 30, 30, 40, 50])
+var data_x = new Array([10, 30, 40, 10, 30, 30])
 var data_y = new Array([50, 40, 30, 20, 10])
 var data_xy = new Arrays_correlation(data_x.data, data_y.data)
 var linear_xy = new Arrays_linear_regression(data_x.data, data_y.data)
