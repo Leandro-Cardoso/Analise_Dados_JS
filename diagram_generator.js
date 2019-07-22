@@ -55,6 +55,15 @@ class Histogram{
             var p_identity = 'p' + (i + 1) //IDENTITY P
             bar.innerHTML += `<p id="${p_identity}">${frequency_array[i]}</p>`
         }
+        //SUBTITLE CLASSES
+        var position = document.getElementById('histogram')
+        position.innerHTML += `<p id="histogram_classes">${this.min}</p>`
+        var position = document.getElementById('histogram_classes')
+        position.style.textAlign = 'left'
+        var interval_classes = this.interval_classes()
+        for(var i = 0; i <= this.num_classes - 1; i++){
+            position.innerHTML += interval_classes[i]
+        }
     }
 }
 //------------------------------------------------DRAW DIAGRAMS
